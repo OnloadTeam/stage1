@@ -1,0 +1,95 @@
+body {
+	font-family:"Microsoft Yahei";
+	background-color: #ccc;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+nav {
+	height: 50px;
+	background-color: #222;
+}
+nav ul {
+	float: right;
+	
+}
+nav li,
+nav h1 {
+	display: inline-block;
+	margin: 0 20px;
+}
+nav li a {
+	list-style-type: disc;
+	color: #fff;
+}
+.articlecontainer {
+	position: relative;
+	border: 1px solid #aaa;
+	padding: 30px 20px;
+	margin: 10px;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px #555;
+}
+.piccontainer {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #111;
+	margin: 20px 40px;
+	text-align: center;
+}	
+.piccontainer img {
+	width: 100px;
+}
+table {
+	width: 100%;
+	border: 1px solid #aaa;
+}
+table td,
+table tr {
+	border: 1px solid #aaa;
+}
+#leftsidebar {
+	float: left;
+	width: 30%;
+	padding: 10px;
+}
+#rightsidebar {
+	float: right;
+	width: 65%;
+	padding: 10px;
+}
+#submitbtn {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	background-color: blue;
+	color: #fff;
+}
+.clearfloat:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.tabletitle {
+	/*position: absolute;
+	left: 5em;*/
+	display: inline-block;
+	text-align: right;
+}
+.tabletext {
+	display: inline-block;
+}
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: #222;
+	text-align: center;
+/*	padding: 30px;*/
+}
+footer p {
+	position: relative;
+	top: 30px;
+}
