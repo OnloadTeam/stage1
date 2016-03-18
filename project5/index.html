@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 of Stage 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #dedede;
+            width: 100%;
+        }
+
+        .header {
+            background-color: #333333;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 60px;
+        }
+
+        .header p {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            font-size: 15px;
+            color: #ffffff;
+        }
+
+        .nav-list ul {
+            position: absolute;
+            top: 20px;
+            right: 0;
+        }
+
+        .nav-list li {
+            float: left;
+            margin: 0 5px;
+            font-size: 10px;
+        }
+
+        .nav-list a:link, .nav-list a:hover, .nav-list a:visited {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .text-article {
+            background-color: #fff;
+            width: 90%;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 3px 3px 5px #333333;
+        }
+
+        .text-article h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .text-article h3 {
+            font-size: 20px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .text-article h4 {
+            font-size: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #999;
+        }
+
+        .text-article p {
+            text-indent: 2em;
+
+        }
+
+        .text-article img {
+            display: inline;
+        }
+
+        .text-article ul {
+            list-style: none;
+        }
+
+        .text-article li {
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .img-article li {
+            border: 1px solid #000;
+            max-width: 450px;
+            padding: 10px;
+        }
+
+        li > p {
+            position: relative;
+            left: 30%;
+            /*margin: 0 auto;*/
+        }
+
+        .img-article img {
+            margin: 10px auto;
+        }
+
+        .text-article caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .text-article table {
+            width: 100%;
+            text-align: left;
+            font-size: 12px;
+            color: #444;
+            background-color: #ccc;
+        }
+
+        td, th {
+            padding: 5px;
+        }
+
+        tr {
+            background-color: #ffffff;
+        }
+
+        thead > tr {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        tfoot > tr {
+            background-color: #999999;
+            font-weight: bold;
+        }
+
+        .text-article ol {
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .text-article li {
+            padding: 1px;
+        }
+
+        form > input {
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #000000;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+        }
+
+        .footer p {
+            position: relative;
+            color: #ffffff;
+            font-weight: bold;
+            top: 20px;
+            font-size: 15px;
+        }
+
+        .side h3 {
+            border-left: 3px solid #cccccc;
+            padding: 5px;
+            color: #000000;
+        }
+
+        .form-comp {
+            position: relative;
+            margin: 20px auto;;
+        }
+
+        .form-label {
+            display: inline;
+            position: absolute;
+            right: 63%;
+        }
+
+        .form-input {
+            position: relative;
+            left: 40%;
+        }
+
+        .form-textarea textarea {
+            width: 50%;
+            height: 20%;
+        }
+
+        .form-submit {
+            /*display: inline;*/
+            /*margin: 10px auto;*/
+            /*justify-content: center;*/
+            position: relative;
+            left: 10%;
+
+        }
+
+        .form-submit input {
+            width: 80%;
+            height: 40px;
+            background-color: #3553cf;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <p>Onload Team</p>
+    <nav class="nav-list">
+        <ul>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接二</a></li>
+            <li><a href="#">导航链接三</a></li>
+            <li><a href="#">导航链接四</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="content">
+    <div class="text-article">
+        <article>
+            <header>
+                <h2>文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <h4>文章作者 文章发表时间</h4>
+            </header>
+            <p>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落,换行了
+                <br/>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                <a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+                这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，<em>这是一个很长的斜体段落</em>，<strong>这是一个很长的加粗段落</strong>，这是一个很长的段落，
+            </p>
+            <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img1" title="bridge"/>
+            <p>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了<br/>
+                <a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+                这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+            </p>
+        </article>
+    </div>
+    <div class="text-article">
+        <article>
+            <h2>文章一级标题</h2>
+            <h3>文章二级标题</h3>
+            <h4>文章作者 文章发表时间</h4>
+            <p>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<br/>换行了
+                <br/>
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                <a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+                这是一个很长的段落，这是一个很长的段落，
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img2" title="bridge">
+            </p>
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目一</li>
+                <li>列表项目一</li>
+            </ul>
+        </article>
+    </div>
+    <div class="text-article img-article">
+        <h2>图片</h2>
+        <ul style="list-style: none">
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+        </ul>
+    </div>
+    <div class="text-article">
+        <article>
+            <h2>最后一篇文章一级标题</h2>
+            <h2>文章二级标题</h2>
+            <h4>文章作者 文章发表时间</h4>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+
+            <table>
+                <caption>下面是一个表格</caption>
+                <thead>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">10000</td>
+                </tr>
+                </tfoot>
+            </table>
+        </article>
+    </div>
+    <div class="side text-article">
+        <aside>
+            <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+            <form action="#" method="post">
+                <div class="form-comp">
+                    <div class="form-label">请输入邮箱地址</div>
+                    <input class="form-input" type="email">
+                </div>
+
+                <div class="form-comp">
+                    <div class="form-label">请输入密码</div>
+                    <input class="form-input" type="password">
+                </div>
+                <div class="form-comp">
+                    <div class="form-label">请输入重复输入密码</div>
+                    <input class="form-input" type="password">
+                </div>
+                <div class="form-comp">
+                    <div class="form-label">性别</div>
+                    <div class="form-input">
+                        男<input type="radio" value="#" name="gender" checked>
+                        女<input type="radio" value="#" name="gender">
+                    </div>
+                </div>
+                <div class="form-comp">
+                    <div class="form-label">城市</div>
+                    <div class="form-select form-input">
+                        <select>
+                            <option value="beijing" selected>北京</option>
+                            <option value="shanghai">上海</option>
+                            <option value="guangdong">广东</option>
+                            <option value="nanchang">南昌</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-comp">
+                    <div class="form-label">爱好</div>
+                    <div class="form-checkbox form-input">
+                        <input type="checkbox" name="hobby">运动
+                        <input type="checkbox" name="hobby">艺术
+                        <input type="checkbox" name="hobby">科学
+                    </div>
+                </div>
+                <div class="form-comp">
+                    <div class="form-label">个人描述</div>
+                    <div class="form-input form-textarea">
+                        <textarea title="description">这是一个多行输入框，输入您的个人描述</textarea>
+                    </div>
+                </div>
+                <div class="form-comp form-submit">
+                        <input type="submit" value="确认提交">
+
+                </div>
+
+            </form>
+        </aside>
+    </div>
+</div>
+<div class="footer">
+    <p>版权所有&copy;</p>
+</div>
+</body>
+</html>
