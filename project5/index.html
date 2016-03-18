@@ -14,6 +14,10 @@
             width: 100%;
         }
 
+        .content {
+            position: relative;
+        }
+
         .header {
             background-color: #333333;
             position: relative;
@@ -49,8 +53,8 @@
 
         .text-article {
             background-color: #fff;
-            width: 90%;
-            margin: 20px auto;
+            width: 60%;
+            margin: 15px;
             padding: 30px;
             box-shadow: 3px 3px 5px #333333;
         }
@@ -80,6 +84,7 @@
 
         .text-article img {
             display: inline;
+
         }
 
         .text-article ul {
@@ -93,18 +98,25 @@
 
         .img-article li {
             border: 1px solid #000;
-            max-width: 450px;
-            padding: 10px;
+            max-width: 130px;
+            padding: 20px;
+            /*float: left;*/
+            display: inline-block;
         }
 
         li > p {
             position: relative;
-            left: 30%;
-            /*margin: 0 auto;*/
+            display: block;
+            right: 10px;
+            /*margin: 10px;*/
         }
 
         .img-article img {
+            /*position: absolute;*/
             margin: 10px auto;
+            width: 80px;
+            height: 80px;
+            display: block;
         }
 
         .text-article caption {
@@ -196,9 +208,6 @@
         }
 
         .form-submit {
-            /*display: inline;*/
-            /*margin: 10px auto;*/
-            /*justify-content: center;*/
             position: relative;
             left: 10%;
 
@@ -213,6 +222,14 @@
             color: #ffffff;
         }
 
+        .side {
+            position: absolute;
+            width: 25%;
+            right: 0px;
+            top: 65px;
+            float: right;
+            margin: 10px;
+        }
     </style>
 </head>
 
@@ -299,6 +316,26 @@
                 <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
                      title="bridge">
             </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="http://ww3.sinaimg.cn/mw690/98219a56jw1f1wsgsxjkuj20c70bkmza.jpg" alt="img3"
+                     title="bridge">
+            </li>
         </ul>
     </div>
     <div class="text-article">
@@ -352,63 +389,63 @@
             </table>
         </article>
     </div>
-    <div class="side text-article">
-        <aside>
-            <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
-            <form action="#" method="post">
-                <div class="form-comp">
-                    <div class="form-label">请输入邮箱地址</div>
-                    <input class="form-input" type="email">
-                </div>
+</div>
+<div class="side text-article">
+    <aside>
+        <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+        <form action="#" method="post">
+            <div class="form-comp">
+                <div class="form-label">请输入邮箱地址</div>
+                <input class="form-input" type="email">
+            </div>
 
-                <div class="form-comp">
-                    <div class="form-label">请输入密码</div>
-                    <input class="form-input" type="password">
+            <div class="form-comp">
+                <div class="form-label">请输入密码</div>
+                <input class="form-input" type="password">
+            </div>
+            <div class="form-comp">
+                <div class="form-label">请输入重复输入密码</div>
+                <input class="form-input" type="password">
+            </div>
+            <div class="form-comp">
+                <div class="form-label">性别</div>
+                <div class="form-input">
+                    男<input type="radio" value="#" name="gender" checked>
+                    女<input type="radio" value="#" name="gender">
                 </div>
-                <div class="form-comp">
-                    <div class="form-label">请输入重复输入密码</div>
-                    <input class="form-input" type="password">
+            </div>
+            <div class="form-comp">
+                <div class="form-label">城市</div>
+                <div class="form-select form-input">
+                    <select>
+                        <option value="beijing" selected>北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="guangdong">广东</option>
+                        <option value="nanchang">南昌</option>
+                    </select>
                 </div>
-                <div class="form-comp">
-                    <div class="form-label">性别</div>
-                    <div class="form-input">
-                        男<input type="radio" value="#" name="gender" checked>
-                        女<input type="radio" value="#" name="gender">
-                    </div>
+            </div>
+            <div class="form-comp">
+                <div class="form-label">爱好</div>
+                <div class="form-checkbox form-input">
+                    <input type="checkbox" name="hobby">运动
+                    <input type="checkbox" name="hobby">艺术
+                    <input type="checkbox" name="hobby">科学
                 </div>
-                <div class="form-comp">
-                    <div class="form-label">城市</div>
-                    <div class="form-select form-input">
-                        <select>
-                            <option value="beijing" selected>北京</option>
-                            <option value="shanghai">上海</option>
-                            <option value="guangdong">广东</option>
-                            <option value="nanchang">南昌</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="form-comp">
+                <div class="form-label">个人描述</div>
+                <div class="form-input form-textarea">
+                    <textarea title="description">这是一个多行输入框，输入您的个人描述</textarea>
                 </div>
-                <div class="form-comp">
-                    <div class="form-label">爱好</div>
-                    <div class="form-checkbox form-input">
-                        <input type="checkbox" name="hobby">运动
-                        <input type="checkbox" name="hobby">艺术
-                        <input type="checkbox" name="hobby">科学
-                    </div>
-                </div>
-                <div class="form-comp">
-                    <div class="form-label">个人描述</div>
-                    <div class="form-input form-textarea">
-                        <textarea title="description">这是一个多行输入框，输入您的个人描述</textarea>
-                    </div>
-                </div>
-                <div class="form-comp form-submit">
-                        <input type="submit" value="确认提交">
+            </div>
+            <div class="form-comp form-submit">
+                <input type="submit" value="确认提交">
 
-                </div>
+            </div>
 
-            </form>
-        </aside>
-    </div>
+        </form>
+    </aside>
 </div>
 <div class="footer">
     <p>版权所有&copy;</p>
