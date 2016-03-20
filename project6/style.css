@@ -92,17 +92,20 @@
 }
 
 .banner-support-text {
+    position: relative;
     width: 203px;
     border-top: 2px solid #cc8091;
+    height: 301px;
 }
 
 .text-section-2 {
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 90px;
+    left: -30px;
 }
 .text-section-3{
     position: absolute;
-    bottom: -80px;
+    bottom: -50px;
 }
 .support-text-title {
     text-decoration: underline;
@@ -400,11 +403,12 @@
     display: inline-block;
     font-size: 72px;
     color: #d45d5c;
+    font-family: SimHei, sans-serif;
 }
 
 .big-quote {
     top: -20px;
-    left: -20px;
+    left: -35px;
 }
 
 .big-unquote {
