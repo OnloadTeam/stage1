@@ -50,9 +50,11 @@ html,body {
 @media (max-width: 640px) {
 	#container {
 		align-items: flex-start;
+		align-content: flex-start;
 	}
 	#four {
 		order: -1;
+		margin-bottom: 20px;
 	}
 	
 }
