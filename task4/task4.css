@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#main {
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -200px;
+	background: #ccc;
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+}
+#left-circle,#right-circle {
+	position: absolute;
+	background: #fc0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+#left-circle {
+	top: -50px;
+	left: -50px;
+}
+#right-circle {
+	bottom: -50px;
+	right: -50px;
+}
