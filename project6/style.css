@@ -251,6 +251,7 @@
 
 .row-third {
     position: relative;
+    height: 100px;
 }
 
 .text-title {
@@ -281,11 +282,10 @@
 }
 
 .banner-2 {
-    position: relative;
+    position: absolute;
     width: 458px;
     height: 275px;
-    overflow: hidden;
-    left: 435px;
+    right: 0px;
 }
 
 .right-1 {
@@ -329,9 +329,9 @@
 .main-para {
     width: 415px;
     height: 500px;
-    position: relative;
+    position: absolute;
     left: 0;
-    top: -100px;
+    top: 150px;
 }
 
 .text-indent {
@@ -420,7 +420,7 @@
 }
 
 .section-side-text p {
-    text-indent: 4em;
+    text-indent: 3em;
     font-size: 14px;
     font-style: italic;
     color: #5a5b5b;
@@ -429,10 +429,9 @@
 }
 
 .section-side-1 div {
-    position: absolute;
     font-size: 110px;
     color: #ffffff;
-    top: -30px;
+    line-height: 80%;
     font-family: 微软雅黑, sans-serif;
 }
 
@@ -472,7 +471,7 @@
 .footer {
     position: relative;
     border-top: 1px solid #938e8c;
-    top: 620px;
+    top: 570px;
 }
 
 .footer-text {
