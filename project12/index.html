@@ -3,8 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #aaaaaa;
+        }
+
+        tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(3) {
+            color: red;
+        }
+
+        thead {
+            background-color: black;
+        }
+
+        tr {
+            height: 40px;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        thead > tr {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .trans-input {
+            margin: 20px;
+        }
+
+        .trans-input input {
+            width: 100px;
+            transition: width .5s;;
+
+        }
+
+        .trans-input input:focus {
+            width: 400px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul, li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .banner-main {
+            margin: 20px;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .ui-banner{
+            width: 300%;
+            height: 200px;
+            list-style: none;
+            position: absolute;
+            transition: left 1s ease-in;
+        }
+        .ui-banner:before,.ui-banner:after{
+            content: '';
+            clear: both;
+        }
+        .ui-banner .banner{
+            width: 300px;
+            height: 200px;
+            float: left;
+        }
+         .banner1{
+            background-color: aquamarine;
+        }
+        .banner2{
+            background-color: deepskyblue;
+        }
+        .banner3{
+            background-color: #f5e327;
+        }
+        .banner-panel{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .banner-label{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            color: #aaaaaa;
+            background-color: rgba(255,255,255,0.5);
+            text-align: center;
+            line-height: 30px;
+            border: 1px solid #ffffff;
+        }
+        .banner-btn-1:checked~.ui-banner{
+            left: 0;
+        }
+        .banner-btn-2:checked~.ui-banner{
+            left: -100%;
+        }
+        .banner-btn-3:checked~.ui-banner{
+            left: -200%;
+        }
+    </style>
 </head>
 <body>
+<table>
+    <thead>
+    <tr>
+        <td>排名</td>
+        <td>网站</td>
+        <td>排名</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1.</td>
+        <td>百度前端技术学院</td>
+        <td>13000</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>百度前端技术学院</td>
+        <td>12000</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>百度前端技术学院</td>
+        <td>11000</td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>百度前端技术学院</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>百度前端技术学院</td>
+        <td>9000</td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>百度前端技术学院</td>
+        <td>8000</td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>百度前端技术学院</td>
+        <td>7000</td>
+    </tr>
+    <tr>
+        <td>8.</td>
+        <td>百度前端技术学院</td>
+        <td>6000</td>
+    </tr>
+    <tr>
+        <td>9.</td>
+        <td>百度前端技术学院</td>
+        <td>5000</td>
+    </tr>
+    <tr>
+        <td>10.</td>
+        <td>百度前端技术学院</td>
+        <td>4000</td>
+    </tr>
+    </tbody>
+</table>
+<div class="trans-input">
+    <input type="text">
+</div>
+
+<div class="banner-main">
+    <input class="banner-btn-1" type="radio" id="banner-btn-1" name="banner" checked hidden>
+    <input class="banner-btn-2" type="radio" id="banner-btn-2" name="banner" hidden>
+    <input class="banner-btn-3" type="radio" id="banner-btn-3" name="banner" hidden>
+    <ul class="ui-banner">
+        <li class="banner banner1"></li>
+        <li class="banner banner2"></li>
+        <li class="banner banner3"></li>
+    </ul>
+    <div class="banner-panel">
+        <label for="banner-btn-1" class="banner-label">1</label>
+        <label for="banner-btn-2" class="banner-label">2</label>
+        <label for="banner-btn-3" class="banner-label">3</label>
+    </div>
+</div>
 
 </body>
 </html>
