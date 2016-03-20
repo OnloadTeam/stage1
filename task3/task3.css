@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#content {
+	background: #eee;
+	padding: 20px;
+	/*overflow: auto;*/
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+#left {
+	float: left;
+	width: 200px;
+	padding: 20px;
+	border: 1px solid #999;
+	background: white;
+}
+#left img,p {
+	float: left;
+	margin-right: 10px;
+}
+#right {
+	float: right;
+	padding: 20px;
+	border: 1px solid #999;
+	background: white;
+}
+#mainContent {
+	margin-left: 260px;
+	margin-right: 150px;
+	padding: 20px;
+	border: 1px solid #999;
+	background: white;
+}
+
+img {
+	border: 1px solid #999;
+	width: 80px;
+	height: 80px;
+}
+h2 {
+	font-size: 20px;
+}
