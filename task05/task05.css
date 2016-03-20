@@ -32,7 +32,7 @@
     padding-left: 30px;
 }
 #headerright{
-    width: 200px;
+    width: 18%;
     height: 34px;
     float: right;
     padding-top: 16px;
@@ -89,22 +89,16 @@ h1,h2{
     float: left;
     margin-right: 370px;
 }
-#right-info{
-    width:300px;
-    position: absolute;
-    right: 25px;
-}
-#content5{
-    width: 100%;
-    height:600px;
-    background-color: #ffffff;
-}
+
 
 #content1 img{
-    width: 30%;
+    width: 300px;
     height:auto;
+    max-height: 200px;
     float: left;
     margin:15px 15px 0 15px;
+    object-fit: cover;
+    object-position: -10px 0px;
 }
 #content1 a,#content2 a{
     color: #269abc;
@@ -115,10 +109,13 @@ h1,h2{
     text-decoration: none;
 }
 #content2 img{
-    width: 40%;
+    width: 400px;
     height:auto;
+    max-height: 200px;
     float: left;
     margin:15px 15px 0 15px;
+    object-fit: cover;
+    object-position: -10px 0px;
 }
 #content2 ul{
     list-style: none;
@@ -165,6 +162,18 @@ h1,h2{
 #content4 table tr:last-child{
     background-color: #bbb;
     font-weight: bold;
+}
+
+#right-info{
+    width:300px;
+    position: absolute;
+    right: 25px;
+}
+#content5{
+    width: 100%;
+    height:600px;
+    background-color: #ffffff;
+    position: relative;
 }
 #content5 h2{
     border-left: 3px solid silver;
