@@ -1,0 +1,37 @@
+
+body{background-color: #DEDEDE;}
+/*头部部分*/
+.header{width: 100%;height: 60px;background-color: #333333;}
+.header a{display: inline-block;vertical-align: middle;font-size: 0px;}
+.header a img{vertical-align: middle;}
+.header .includeImg{line-height: 60px;font-size: 0;float: left;}
+.header img{padding-left:39px;vertical-align: middle;line-height: 60px;}
+.header .link{line-height: 60px;}
+.header .link ul li{display: inline-block;list-style-type: circle; *display:inline; *zoom:1; margin-right: 20px;}
+.header .link a{text-decoration:none;color: #fff;font-size: 14px;}
+/*中间部分*/ 
+.content{width: 1216px;margin:0 auto;background-color: #DEDEDE;}
+.content .div{margin-top: 25px;border-right: 3px solid #848484;border-bottom: 2px solid #848484;padding:47px 32px 40px 20px;background-color: #fff;}
+.content p{line-height: 24px;font-size: 16px;text-indent: 22px;}
+.content span{line-height: 24px;}
+.content h2,span{color: #68605D;}
+.content h1{line-height: 45px;}
+.content h2{line-height: 35px;}
+.content .cludeH2{line-height: 48px;}
+.content .cludeH2 h2{display: inline-block;vertical-align: middle;margin-left: 10px;}
+.content .cludeH2 i{height: 45px;background-color: #888;width: 5px;display: inline-block;vertical-align:middle;}
+.contentList{padding-left: 21px;margin-top: 20px;}
+.contentList li{line-height: 26px;font-size: 16px;}
+.content .conIncludeImg{margin-top:16px;width:121px;height: 126px;margin-left:38px;border:1px solid #eee;text-align: center;}
+.rank{padding-left: 40px;margin:16px 0;}
+.rank ol li{line-height: 26px;font-size: 16px;}
+/*表格部分*/
+table{width:95%;}
+table th{background-color: #333333;color: #fff;text-align: left;}
+table th,td{font-size:14px;}
+table tfoot tr{background-color: #CCCCCC;font-weight: bold;}
+/*表单部分*/
+#inputInfo table{padding-left: 288px;}
+/*底部部分*/
+.footer{background-color: #000;width: 100%;}
+.footer p{text-align: center;line-height: 71px;color: #fff;

@@ -1,0 +1,13 @@
+body{width:100%;}
+.box{width:90%;margin:0 auto;border: 1px solid #eee;padding: 19px;background-color: #eee;border:1px solid #999;}
+/*left*/
+.box .left{width:180px;height: 140px;float: left;border: 1px solid #999;line-height: 140px;background-color: #fff;}
+.box .left .includeImg{padding-left: 20px;}
+.box .left .includeImg img{vertical-align: middle;}
+.box .left .includeText{margin:-170px 0 0 110px;font-size: 16px;}
+/*content*/
+.box .content{background-color: #fff;margin:0 180px 0 212px;padding: 30px;}
+.box .content p{text-indent: 30px;}
+/*right*/
+.box .right{width: 120px;float:right;border: 1px solid #999;background-color: #fff;}
+.box .right img{padding: 20px;}
