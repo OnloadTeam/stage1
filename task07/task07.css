@@ -337,6 +337,7 @@
 
 .content-activity{
     width: 100%;
+    min-width: 1160px;
     height:590px;
     background-color: #f7f7f7;
     text-align: center;
