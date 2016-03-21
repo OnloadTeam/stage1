@@ -93,7 +93,8 @@ nav #lefttext {
 	font-size: 24px;
 	font-family: 微软雅黑,"Microsoft YaHei";
 	text-decoration: underline;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
 }
 #rightbar #tech {
 	margin: 0 0 40px 0;

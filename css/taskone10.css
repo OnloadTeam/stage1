@@ -16,7 +16,6 @@ html,body {
     -webkit-flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 #one,
 #two,
@@ -56,5 +55,4 @@ html,body {
 		order: -1;
 		margin-bottom: 20px;
 	}
-	
 }
