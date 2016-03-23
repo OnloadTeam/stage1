@@ -37,13 +37,13 @@ html,body {
 #two {
 	width: 150px;
 	height: 100px;
-	display: block;
+	/*display: block;*/
 	border: 1px solid #f00;
 }
 #three {
 	width: 150px;
 	height: 40px;
-	display: block;
+	/*display: block;*/
 	border: 1px solid #f00;
 }
 @media (max-width: 640px) {
@@ -53,6 +53,11 @@ html,body {
 	}
 	#four {
 		order: -1;
+	}
+	#one,
+	#two,
+	#three,
+	#four {
 		margin-bottom: 20px;
 	}
 }
