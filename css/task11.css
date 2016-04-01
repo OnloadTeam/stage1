@@ -6,14 +6,19 @@
     -ms-box-sizing:border-box ;
     box-sizing:border-box ;
 }
+body{
+	max-width: 600px;
+}
 .header{
-    width: 100%;
+	width: 100%;
+    max-width: 600px;
     height: 60px;
     background-color: #91d4da;
     color: #ffffff;
     position: fixed;
     top: 0;
     text-align: center;
+
 }
 .header p{
     font-family: "Microsoft YaHei", SimSun, SimHei;
